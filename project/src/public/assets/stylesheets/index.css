@@ -12,14 +12,14 @@ header {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: bolder;
   text-align: center;
 }
 
 main {
   flex: 1;
-  padding: 50px;
+  padding: 10px;
 }
 
 footer {
@@ -29,15 +29,16 @@ footer {
 h1, h2, h3, h4, h5, h6{
   margin: 0;
   padding: 0;
-  font-weight: normal;
-  font-size: 20px
+  font-weight: bold;
+  font-size: 20px;
 }
 
 body, p, ol, ul, li {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  font-size: 18px
+  font-size: 15px;
+  text-align: justify !important;
 }
 
 
@@ -52,6 +53,15 @@ body, p, ol, ul, li {
 
 /* Hide the images by default */
 .mySlides {
+  display: none;
+}
+.mySlidesSpirit {
+  display: none;
+}
+.mySlidesCuriosity {
+  display: none;
+}
+.mySlidesOpportunity {
   display: none;
 }
 
@@ -128,8 +138,8 @@ body, p, ol, ul, li {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
+  padding: 10px 12px;
+  font-size: 15px;
   width: 33.3%;
 }
 
@@ -142,7 +152,7 @@ body, p, ol, ul, li {
 .tabcontent {
   color: white;
   display: none;
-  padding: 100px 20px;
+  padding: 50px 20px;
   height: 100%;
 }
 
@@ -161,42 +171,75 @@ body, p, ol, ul, li {
 
 @media screen and (min-width: 1224px) {
   /* use mobile */
-  h1 {
-    font-size: 54px;
+  main {
+    padding: 50px;
   }
 
-  h2 {
-    font-size: 50px;
+  header {
+    padding: 20px 10px;
+    font-size: 40px;
   }
 
-  h3 {
-    font-size: 44px;
+  h1, h2, h3 {
+    font-size: 40px;
   }
 
   p,li {
-    font-size: 40px;
+    font-size: 30px;
     text-align: justify !important;
   }
+  
+  /* Style the tab buttons */
+.tablink {
+  padding: 14px 16px;
+  font-size: 30px;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  padding: 100px 20px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+}
+
 }
 
 /* -------------------  LARGE SCREENS  -------------- */
 
 @media screen and (min-width: 1824px) {
   /* use mobile */
-  h1 {
-    font-size: 54px;
+  main {
+    padding: 50px;
   }
 
-  h2 {
-    font-size: 50px;
+  header {
+    padding: 20px 10px;
+    font-size: 40px;
   }
 
-  h3 {
-    font-size: 44px;
+  h1, h2, h3 {
+    font-size: 40px;
   }
 
   p,li {
-    font-size: 40px;
+    font-size: 30px;
     text-align: justify !important;
   }
+  
+  /* Style the tab buttons */
+.tablink {
+  padding: 14px 16px;
+  font-size: 30px;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  padding: 100px 20px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+}
 }
